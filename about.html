@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title class="title">about us</title>
+  <link rel="icon" href="chef.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="home.css" rel="stylesheet" type="text/css" />
+  <link href="about.css" rel="stylesheet" type="text/css" />
+  <!-- Location Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--   star icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Restaurant Icon --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Heart Icon --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Random Icon --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- About Icon --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+  <!--   Navigation Bar -->
+  <nav class="navbar navbar-expand-lg teal-med-bg" id="navSpace">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="chef.png" width="35" height="35">chef.it</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Find a Restaurant</a>
+          </li>
+<!--           <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Your Favorites</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="random.html"> Random Generator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--   Page Title -->
+  <section> 
+      <div class="aboutTitleContainer"> 
+          <div class="center mt-4">
+            <h1>about us</h1>
+            </div>
+      </div>
+      <div class="row aboutContainer">
+      <div class="col-4">
+        <img src="https://media.self.com/photos/61e9dae8808d098c8ccc3b58/1:1/w_768,c_limit/15-Bean-Soup-Vegetarian.jpg"
+          id="aboutPicture" />
+      </div>
+      <div class="col-8">
+        <h5>chef.it is a restaurant finder website developed by Noah Cook, Dominic Onyedeke, Melissa Wu, and Rebecca Wu.
+          We are 2022 Google Computer Science Summer Institute students who are entering our first year of university.
+          This website was made with HTML, CSS, and Javascript, and includes features such as autofill search bars,
+          button selectors, random generators, and favoriting functionality.
+        </h5>
+        <br>
+        <h5> 
+        APIs used: Travel Advisor, Giphy
+        </h5>
+      </div>
+    </div>
+  </section>
+  
+
+  <section> 
+      <div class="gifContainer"> 
+          <div class="row">
+          <div class = "col"> 
+                <div class="card" id="gifCard">
+                  <div class="card-body">
+                      <div class = "card-title"> 
+                          <h4> Breakfast GIF </h4>
+                      </div>
+                      <button class ="gifButton" id ="button1"> GIF IT! </button>
+                      <br>
+                      <br>
+                    <div class="card-image">
+                        <figure class="image" id ="imageholder"></figure>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class = "col"> 
+                <div class="card" id="gifCard">
+                  <div class="card-body">
+                      <div class = "card-title"> 
+                          <h4> Lunch GIF </h4>
+                      </div>
+                      <button class ="gifButton" id ="button2"> GIF IT! </button>
+                      <br>
+                      <br>
+                    <div class="card-image">
+                        <figure class="image" id ="imageholder2"></figure>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class = "col"> 
+                <div class="card" id="gifCard">
+                  <div class="card-body">
+                      <div class = "card-title"> 
+                          <h4> Dinner GIF </h4>
+                      </div>
+                      <button class ="gifButton" id ="button3"> GIF IT! </button>
+                      <br>
+                      <br>
+                    <div class="card-image">
+                        <figure class="image" id ="imageholder3"></figure>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+      </div> 
+  </section>
+
+  <!--Footer -->
+  <section class="footerBackground">
+    <div class="footerContainer">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+            <h2> chef.it</h2>
+            <h5> A Google CSSI 2022 Project</h5>
+            <h6> Created by: Melissa, Noah, Dominic, & Rebecca</h6>
+          </div>
+          <div class="col" id="menuItems">
+            <a href="index.html" class="footerLink"> <span class="material-symbols-outlined">
+            restaurant </span> Find a Restaurant</a>
+            <br>
+            <a href="random.html" class="footerLink"> <span class="material-symbols-outlined">
+            shuffle </span>Random Generator</a>
+            <br>
+            <a href="about.html" class="footerLink"> <span class="material-symbols-outlined">
+            description </span>About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="/about.js" defer></script>
+</body>
+
+</html>

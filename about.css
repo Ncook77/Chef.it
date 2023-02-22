@@ -1,0 +1,61 @@
+.aboutContainer {
+  margin-top: 40px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#aboutPicture {
+  border-radius: 25px;
+  width: 100%;
+}
+
+/* Footer */
+.footerBackground{
+    background-color: #87D4C2;
+}
+
+.footerContainer{
+    padding: 75px;  
+}
+
+.footerLink {
+  color: black;
+}
+
+.footerLink:hover {
+  color: #6AA194;
+}
+
+
+.gifButton {
+  border-radius: 15px;
+  background: #ffffff;
+  outline: 1px solid black;
+  padding: 10px;
+}
+
+.gifCard{
+    display: flex; 
+    justify-content: center;
+}
+
+.gifContainer{
+    margin: 100px; 
+}
+
+.aboutTitleContainer{
+    margin-top: 60px; 
+}
+
+.card{
+    height: 350px; 
+}
+
+#menuItems{
+    line-height: 26px;
+}
+
+#navSpace{
+    padding-top: 14px;
+}
+

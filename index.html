@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title class="title">chef.it</title>
+  <link rel="icon" href="chef.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="home.css" rel="stylesheet" type="text/css" />
+  <!-- Location Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--   star icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Restaurant Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Heart Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- Random Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- About Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--   Star icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<!--   Money icon -->
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<body>
+
+  <!--   Navigation Bar -->
+  <nav class="navbar navbar-expand-lg teal-med-bg" id="navSpace">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="chef.png" width="35" height="35">chef.it</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Find a Restaurant</a>
+          </li>
+          <!--           <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Your Favorites</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="random.html"> Random Generator </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--   Website Title -->
+  <div class="center mt-4">
+    <h1>chef.it</h1>
+  </div>
+
+  <!--   Search Filter -->
+  <section>
+    <div class="filtersContainer">
+      <div class="row">
+        <div class="col-3" id="filtersColumn">
+          <h3> filters</h3>
+          <br>
+          <div class="locationFilter">
+            <h6> location</h6>
+            <input type="text" class="form-control" id="resLocation">
+          </div>
+          <br>
+          <div class="reviewsFilter">
+            <h6> reviews </h6>
+            <div id="review" class="reviewOval centerApart rating">
+              <span class="fa fa-star unchecked fa-lg" id="star-5"></span>
+              <span class="fa fa-star unchecked fa-lg" id="star-4"></span>
+              <span class="fa fa-star unchecked fa-lg" id="star-3"></span>
+              <span class="fa fa-star unchecked fa-lg" id="star-2"></span>
+              <span class="fa fa-star unchecked fa-lg" id="star-1"></span>
+            </div>
+          </div>
+          <br>
+          <div id="price" class="priceFilter">
+            <h6>price</h6>
+            <div class="priceButtons">
+              <div class="btn priceOval center" id="price-low">$</div>
+              <div class="btn priceOval center" id="price-med">$$</div>
+              <div class="btn priceOval center" id="price-high">$$$</div>
+              <div class="btn priceOval center" id="price-high">$$$$</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8" id="cuisineColumn">
+          <h3> select a cuisine</h3>
+          <input type="" class="form-control" id="cuisineType">
+          <!-- Cuisine Buttons -->
+          <br>
+          <div class="row">
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="americanCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">american</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="frenchCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">french</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="japaneseCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">japanese</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="indianCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">indian</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="chineseCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">chinese</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="greekCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">greek</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="spanishCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">spanish</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="italianCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">italian</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="mexicanCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">mexican</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="thaiCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">thai</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="koreanCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">korean</h6>
+              </div>
+            </div>
+            <div class="col-2 searchButton">
+              <div class="btn roundCorners cuisineButton" id="vietnameseCuisine">
+                <img class="centerIcon"
+                  src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
+                  height="50" />
+                <h6 class="text-center">vietnamese</h6>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Generate and Reset Buttons -->
+  <section class="finalButtons">
+    <div class="generateButtonContainer">
+      <button type="button" class="btn btn-lg" id="generateButton">Generate!</button>
+    </div>
+    <div class="resetButtonContainer">
+      <button type="button" class="btn btn-lg" id="resetButton">Reset</button>
+    </div>
+  </section>
+
+  <!-- Generated Restaurants -->
+  <section id="wrapper">
+    <div class="generatedContainer">
+      <div class="col-12 center hidden" id="loading">
+        <img
+          src="https://icon-library.com/images/loading-icon-transparent-background/loading-icon-transparent-background-12.jpg"
+          height="50px" width="50px" />
+      </div>
+      <div class="row align-items-start hidden" id="resultTitle">
+        <h3 class="fs-1">Your Generated Restaurants</h3>
+      </div>
+      <br>
+      <div class="row align-items-start" id="restCards">
+        <!-- Row 1 Column 1-->
+        <!--         <div class="col-6">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img class="card-img cardImage"
+                  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80">
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body cardContent">
+                  <h5 id="first" class="card-title">Restaurant #1</h5>
+                  <div>
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <span> 123 Example Ave Fresno CA 12345</span>
+                    <br>
+                  </div>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!--Footer -->
+  <section class="footerBackground">
+    <div class="footerContainer">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+            <h2> chef.it</h2>
+            <h5> A Google CSSI 2022 Project</h5>
+            <h6> Created by: Melissa, Noah, Dominic, & Rebecca</h6>
+          </div>
+          <div class="col" id="menuItems">
+            <a href="index.html" class="footerLink"> <span class="material-symbols-outlined">
+                restaurant </span> Find a Restaurant</a>
+            <br>
+            <a href="random.html" class="footerLink"> <span class="material-symbols-outlined">
+                shuffle </span>Random Generator</a>
+            <br>
+            <a href="about.html" class="footerLink"> <span class="material-symbols-outlined">
+                description </span>About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="/Experimental.js" defer></script>
+  <script src="/favorites.js" defer></script>
+  </div>
+</body>

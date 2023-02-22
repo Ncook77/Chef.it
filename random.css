@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* General Formatting */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.centerApart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.centerVert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  color: #6AA194;
+}
+
+a:hover {
+  color: #87D4C2;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Navigation Bar */
+nav a {
+  color: black;
+}
+
+nav a:hover {
+  color: #6AA194;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+#navSpace{
+    padding-top: 14px;
+}
+
+/* Colors */
+.teal-dark-bg {
+  background-color: #6AA194 !important;
+}
+
+.teal-dark {
+  color: #6AA194 !important;
+}
+
+.teal-med-bg {
+  background-color: #87D4C2 !important;
+}
+
+.teal-med {
+  color: #87D4C2 !important;
+}
+
+.teal-light-bg {
+  background-color: #9CF7E2 !important;
+}
+
+.teal-light {
+  color: #9CF7E2 !important;
+}
+
+/* Random Container  */
+
+.randomContainer{
+    margin: 100px; 
+    
+}
+
+/* Roll Button */
+.rollButton {
+  border-radius: 15px;
+  background: #ffffff;
+  outline: 1px solid black;
+  padding: 10px;
+}
+
+.rollButton:hover {
+  background: #9CF7E2;
+}
+
+.rollButtonMain{
+  
+  border-radius: 15px;
+  background: #ffffff;
+  outline: 1px solid black;
+  padding: 10px; 
+}
+
+.rollButtonContainer{
+    display: flex; 
+  justify-content: center; 
+}
+
+
+
+
+.randomContainer{
+    margin-top: 75px; 
+    margin-bottom: 25px; 
+}
+
+/* Footer */
+.footerBackground{
+    background-color: #87D4C2;
+}
+
+.footerContainer{
+    padding: 75px;  
+}
+
+.footerLink {
+  color: black;
+}
+
+.footerLink:hover {
+  color: #6AA194;
+}
+
+.generatedContainer{
+    margin: 100px; 
+}
+
+#menuItems{
+    line-height: 26px;
+}
